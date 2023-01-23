@@ -1,28 +1,23 @@
 import "./App.css";
-import Boton from "./components/Boton";
-import Contador from "./components/Contador";
-import { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Information } from "./components/Information";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
 
 function App() {
 
-  const [numClics, setNumClics] = useState(0)
-
-
-  const manejarClic = () => {
-    setNumClics(numClics + 1);
-  };
-
-  const reiniciarClic = () => {
-    setNumClics(numClics * 0);
-  };
 
   return (
     <div className="App">
-      <Contador numClics={numClics} />
+      
+      <NavBar />
+      <Banner />
+      <Information/>
+      <Skills/>
+      <Projects/>
 
-      <Boton texto="clic" esBotonDeClic={true} manejarClic={manejarClic} />
-
-      <Boton texto="reset" esBotonDeClic={false} manejarClic={reiniciarClic} />
     </div>
   );
 }
