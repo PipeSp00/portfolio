@@ -36,9 +36,9 @@ banner-imagen"
 
                             <Button size="lg" variant="outline-dark">
                             
-                            <a href="#" download="Felipe_Spena_Resume">
-                                Download my Resume
-                            </a>
+                            <a href="FelipeSpenaResume.pdf" download>
+  Download my resume
+</a>
                         </Button>
                         </span>
                        

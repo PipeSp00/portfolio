@@ -5,6 +5,8 @@ import relojimage from "../multimedia/Reloj.jpg";
 import iphoneimage from "../multimedia/Iphone.jpg";
 import microfonoimage from "../multimedia/Microfono.jpg";
 import muebleimage from "../multimedia/mueble.jpg";
+import agimage from "../multimedia/AG.png";
+
 
 export const Projects = () => {
 
@@ -36,6 +38,12 @@ return (
                                     description="Personal Portfolio"
                                     title= "Felipe Spena"
                                     img = {microfonoimage}
+                                    />
+
+                                <ProjectsCard 
+                                    description="Building administrator company web"
+                                    title= "AG Adminsitracion - Work in Progress"
+                                    img = {agimage}
                                     />
                                     
 
