@@ -1,21 +1,25 @@
 import { Col, Row, Container, Button } from "react-bootstrap";
 import background from "../multimedia/background.png";
-import { useInView } from "react-intersection-observer";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 export const Information = () => {
-
-
-    const { ref, inView, entry } = useInView();
+    
+    
+    
+    AOS.init();
 
     return (
-        <div ref={ref} className="information-section"
+        <div data-aos="fade-left" data-aos-duration="2000" className="information-section"
         >
-            <Container clas>
+            <Container >
                 <Row className="align-items-center">
                     <Col xd={12} md={6} xl={5}>
-                        <span>
+                        <span
+                        >
                             <img
                                 src={background}
                                 className="

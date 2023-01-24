@@ -31,7 +31,14 @@ import "react-circular-progressbar/dist/styles.css";
 import { useInView} from "react-intersection-observer";
 import { useState, useEffect } from "react";
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export const Skills = () => {
+
+  AOS.init();
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -70,7 +77,7 @@ export const Skills = () => {
               infine={true}
               className="skill-slide"
             >
-              <div className={`${inView ? "item" : "item-hidden"}`}>
+              <div data-aos="fade-up" data-aos-duration="2000" className="item" >
                 <img src={frontimage} alt="" />
                 <h2>FRONTEND</h2>
                 <div className="item-content">
@@ -83,7 +90,7 @@ export const Skills = () => {
                 </div>
               </div>
 
-              <div className={`${inView ? "item" : "item-hidden"}`}>
+              <div data-aos="fade-up" data-aos-duration="2000" className="item" >
                 <img src={industrialimage} alt="" />
                 <h2>INDUSTRIAL DESIGN</h2>
                 <div className="item-content">
@@ -96,7 +103,7 @@ export const Skills = () => {
                 </div>
               </div>
 
-              <div className={`${inView ? "item" : "item-hidden"}`}>
+              <div data-aos="fade-up" data-aos-duration="2000" className="item" >
                 <img src={uxuiimage} alt="" />
                 <h2>UX & UI</h2>
                 <div className="item-content">
