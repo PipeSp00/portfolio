@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -16,6 +17,7 @@ export const NavBar = () => {
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
+        console.log("scrolledd")
       } else {
         setScrolled(false);
       }
@@ -33,9 +35,11 @@ export const NavBar = () => {
         setActiveLink(value)
     }
 
+
     return (
-        <Navbar expand="lg">
-            <Container>
+        <Navbar className= {`${scrolled ? "navbar-container" : " navbar-container-visible"}`}>
+
+            <Container >
                 <Navbar.Brand href="#home" >
                     
                     <img className="logo" src={logo} alt="logo" />

@@ -39,25 +39,7 @@ export const Skills = () => {
 
   AOS.init();
 
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+
 
   const { ref, inView, entry } = useInView();
 
@@ -67,16 +49,10 @@ export const Skills = () => {
     <section ref={ref}  className="skills" id="skills">
       <Container>
         <Row >
-          <Col xd={12} md={12} xl={12}>
-            <div className="skills-title">
-              <h1>SKILLS</h1>
-            </div>
+          
+            
 
-            <Carousel
-              responsive={responsive}
-              infine={true}
-              className="skill-slide"
-            >
+            <Col xd={12} md={12} xl={4}>
               <div data-aos="fade-up" data-aos-duration="2000" className="item" >
                 <img src={frontimage} alt="" />
                 <h2>FRONTEND</h2>
@@ -89,7 +65,9 @@ export const Skills = () => {
                   <img src={figmaimage} alt="" />
                 </div>
               </div>
+              </Col>
 
+              <Col xd={12} md={12} xl={4}>
               <div data-aos="fade-up" data-aos-duration="2000" className="item" >
                 <img src={industrialimage} alt="" />
                 <h2>INDUSTRIAL DESIGN</h2>
@@ -102,7 +80,8 @@ export const Skills = () => {
                   <img src={sketchupimage} alt="" />
                 </div>
               </div>
-
+              </Col>
+              <Col xd={12} md={12} xl={4}>
               <div data-aos="fade-up" data-aos-duration="2000" className="item" >
                 <img src={uxuiimage} alt="" />
                 <h2>UX & UI</h2>
@@ -113,12 +92,6 @@ export const Skills = () => {
                   
                 </div>
               </div>
-
-        
-              
-
-              
-            </Carousel>
           </Col>
         </Row>
       </Container>
