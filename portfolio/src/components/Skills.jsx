@@ -51,7 +51,9 @@ export const Skills = () => {
         <Row >
           
             
-
+        <div className="skills-title">
+              <h1>SKILLS</h1>
+            </div>
             <Col xd={12} md={12} xl={4}>
               <div data-aos="fade-up" data-aos-duration="2000" className="item" >
                 <img src={frontimage} alt="" />
@@ -66,7 +68,7 @@ export const Skills = () => {
                 </div>
                 <div className="item-txtx">
                 <h4> 
-                    {"aaaaa"}
+                    {"Web and app development"}
                 </h4>
                 <span>
                     {"qaaaasdasd"}
@@ -90,7 +92,7 @@ export const Skills = () => {
                 </div>
                 <div className="item-txtx">
                 <h1 > 
-                    {"Creativiy"}
+                    {"Product development"}
                 </h1>
                 <span>
                     {"qaaaasdasd"}
@@ -107,6 +109,7 @@ export const Skills = () => {
                   <img src={illustratorimage} alt="" />
                   <img src={photoshopimage} alt="" />
                   <img src={analyticsimage} alt="" />
+                  <img src={figmaimage} alt="" />
                   
                 </div>
                 <div className="item-txtx">

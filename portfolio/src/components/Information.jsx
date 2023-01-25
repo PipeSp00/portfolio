@@ -8,8 +8,7 @@ import 'aos/dist/aos.css';
 
 export const Information = () => {
     
-    
-    
+ 
     AOS.init();
 
     return (
@@ -37,13 +36,6 @@ banner-imagen"
                                 in design, programming and automation. Learning every day a
                                 little more, the best project is the next one!
                             </p>
-
-                            <Button size="lg" variant="outline-dark">
-                            
-                            <a href="FelipeSpenaResume.pdf" download>
-  Download my resume
-</a>
-                        </Button>
                         </span>
                        
                         

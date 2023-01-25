@@ -6,6 +6,7 @@ import iphoneimage from "../multimedia/Iphone.jpg";
 import microfonoimage from "../multimedia/Microfono.jpg";
 import muebleimage from "../multimedia/mueble.jpg";
 import agimage from "../multimedia/AG.png";
+import portfolioimage from "../multimedia/portfolio.png";
 
 
 export const Projects = () => {
@@ -42,10 +43,10 @@ return (
                                     <ProjectsCard 
                                     description="Personal Portfolio"
                                     title= "Felipe Spena"
-                                    img = {microfonoimage}
+                                    img = {portfolioimage}
                                     />
 
-                                <ProjectsCard 
+                                 <ProjectsCard 
                                     description="Building administrator company web"
                                     title= "AG Adminsitracion - Work in Progress"
                                     img = {agimage}

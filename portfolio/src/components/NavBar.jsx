@@ -37,7 +37,7 @@ export const NavBar = () => {
 
 
     return (
-        <Navbar className= {`${scrolled ? "navbar-container" : " navbar-container-visible"}`}>
+        <Navbar expand="lg" className= {`${scrolled ? "navbar-container" : " navbar-container-visible"}`}>
 
             <Container >
                 <Navbar.Brand href="#home" >

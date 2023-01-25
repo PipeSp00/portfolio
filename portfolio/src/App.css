@@ -21,7 +21,7 @@ body {
   position: relative;
   
   background: rgb(105,198,240);
-  background: linear-gradient(180deg, rgba(105,198,240,1) 0%, rgb(170, 206, 248) 34%, rgb(79, 161, 248) 67%, rgb(196, 231, 247) 100%);
+  background: linear-gradient(180deg, rgba(115, 115, 117, 0.253) 0%, rgb(104, 114, 255) 34%, rgb(201, 143, 255) 60%, rgb(191, 211, 255) 100%);
   color: #fff !important;
   font-family:'Segoe UI'
 }
@@ -74,10 +74,25 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.loader {
+  scale: .3;
+  position: relative;
+  bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.loader h1 {
+  font-size: 90px;
+  text-align: center;
+  padding: 25px;
+}
 /************ Navbar Css ************/
 .navbar-container {
   background-color: rgba(100, 112, 111, 0.616) !important;
-  width: 100% !important;
 }
 nav.navbar {
   padding: 8px 0;
@@ -372,7 +387,9 @@ span p {
   flex-direction: column;
   align-items: center;
   width: auto;
-  height: 500px;
+  height: fit-
+
+  ;
   border: 1px solid #f3f4f5;
  scale: .9;
  transition: 0.6s ease-in-out;
@@ -490,7 +507,7 @@ span p {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 92%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -734,4 +751,115 @@ input[type=submit] {
 
 .opinion-img{
   width: 10%;
+}
+
+.footer {
+  height: 10px !important;
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  
+
+}
+.footer-logos a{
+  height: 55px;
+  width: 55px;
+  padding: 10px;
+  margin: 5px;
+}
+
+footer p {
+text-align: center;
+margin: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .information-section { 
+    margin:0px 15px 15px 15px;
+    padding: 5px;
+    border-radius: 15px;
+    
+
+}
+
+.name-label {
+ 
+  width: 100%;
+  margin: 0px;
+  
+  
+}
+
+.message-label {
+ 
+  width: 100%;}
+
+.banner-text {
+  font-size: 20px;
+}
+
+
+.imagen-felipe {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin:0px;
+  padding: 0px;
+  
+  align-items: center;
+  text-align: center;
+
+}
+.img-banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {width: 250%;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 10px;
+  overflow: wrap;
+  margin-bottom: 24px;
+  margin: 10px;
+  scale: 1.3;
+}
+.proj-txtx h4 {
+  font-size: 12px;
+  font-weight: 700;
+  
+  line-height: 10px;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  
+}
+
+
+.loader {
+  scale: .5;
+  position: relative;
+  bottom: -40px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  
+  
+}
+
+.loader h1 {
+  font-size: 50px;
+  text-align: center;
+  
+}
 }

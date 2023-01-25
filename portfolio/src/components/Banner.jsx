@@ -1,12 +1,20 @@
 import { Container, Row, Col } from "react-bootstrap";
-import background from "../multimedia/background.png";
+
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import felipe from "../multimedia/felipe.png";
+import AOS from 'aos';
+  import 'aos/dist/aos.css';
 
 export const Banner = () => {
+
+
+  AOS.init();
+
+  
+  
   return (
-    <div>
+    <div data-aos="zoom-in" >
     <section className="banner" id="home">
       <Row className="align-items-center">
         <Col className="justify-items-center" xd={12} md={6} xl={7}>
@@ -15,12 +23,12 @@ export const Banner = () => {
             <span className="wrap">
               <TypeAnimation
                 sequence={[
-                  "Product Designer",
-                  5000,
                   "Web Developer",
-                  5000,
+                  4000,
+                  "Product Designer",
+                  4000,
                   "Ux & UI Design",
-                  5000,
+                  4000,
                 ]}
                 //  Replacing previous Text
                 style={{ fontSize: "3em" }}
@@ -35,7 +43,7 @@ export const Banner = () => {
           
             
             <img className="imagen-felipe" src={felipe} alt="" />
-
+            
           
                
         </Col>
