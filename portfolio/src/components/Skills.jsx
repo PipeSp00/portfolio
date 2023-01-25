@@ -24,6 +24,8 @@ import sketchupimage from "../multimedia/sketchup.png";
 import illustratorimage from "../multimedia/illustrator.png";
 import photoshopimage from "../multimedia/photoshop.png";
 import analyticsimage from "../multimedia/analytics.png";
+import xdimage from "../multimedia/xd.png";
+
 
 
 import "react-circular-progressbar/dist/styles.css";
@@ -67,11 +69,11 @@ export const Skills = () => {
                   <img src={figmaimage} alt="" />
                 </div>
                 <div className="item-txtx">
-                <h4> 
-                    {"Web and app development"}
-                </h4>
+                <h1> 
+                    {"Web development"}
+                </h1>
                 <span>
-                    {"qaaaasdasd"}
+                    {"Knowledge in the most used languages and frameworks in the industry, dynamic, creative and interactive designs."}
                 </span>
                 
             </div>
@@ -95,7 +97,7 @@ export const Skills = () => {
                     {"Product development"}
                 </h1>
                 <span>
-                    {"qaaaasdasd"}
+                    {"Development of products from start to finish, adapting each object to each reality, creating unique designs."}
                 </span>
                 
             </div>
@@ -108,16 +110,19 @@ export const Skills = () => {
                 <div className="item-content">
                   <img src={illustratorimage} alt="" />
                   <img src={photoshopimage} alt="" />
+                  <img src={xdimage} alt="" />
                   <img src={analyticsimage} alt="" />
                   <img src={figmaimage} alt="" />
                   
+                  
+                  
                 </div>
                 <div className="item-txtx">
-                <h4> 
-                    {"aaaaa"}
-                </h4>
+                <h1> 
+                    {"User-based designs"}
+                </h1>
                 <span>
-                    {"qaaaasdasd"}
+                    {"User-focused design, always looking for the best possible experience and interface."}
                 </span>
                 
             </div>

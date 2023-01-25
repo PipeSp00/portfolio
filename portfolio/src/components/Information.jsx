@@ -1,5 +1,5 @@
 import { Col, Row, Container, Button } from "react-bootstrap";
-import background from "../multimedia/background.png";
+import felipe2 from "../multimedia/felipe2.png";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,23 +12,19 @@ export const Information = () => {
     AOS.init();
 
     return (
-        <div data-aos="fade-left" data-aos-duration="2000" className="information-section"
+        <div id="about"  className="information-section"
         >
             <Container >
                 <Row className="align-items-center">
-                    <Col xd={12} md={6} xl={5}>
-                        <span
-                        >
-                            <img
-                                src={background}
-                                className="
-banner-imagen"
-                                alt=""
-                            />
+                    <Col xd={12} md={6} xl={4}>
+                        <span data-aos="fade-right"   data-aos-duration="5000" className="img-information">
+                        <img src= {felipe2} alt="" />
                         </span>
+                        
+
                     </Col>
-                    <Col  xd={12} md={6} xl={7}>
-                        <span className="column-information">
+                    <Col  xd={12} md={6} xl={8}>
+                        <span data-aos="fade-left"  data-aos-duration="5000" className="column-information">
                             <p>
                                 Hello there! Welcome to my web portfolio, my name is Felipe
                                 Spena, I am an electromechanical technician, industrial design
@@ -45,3 +41,4 @@ banner-imagen"
         </div>
     );
 };
+ 
