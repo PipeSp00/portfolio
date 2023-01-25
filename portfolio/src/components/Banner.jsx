@@ -11,20 +11,21 @@ export const Banner = () => {
       <Row className="align-items-center">
         <Col className="justify-items-center" xd={12} md={6} xl={7}>
           <div className="banner-text">
-            <h2>{"Hi! I'm Felipe Spena"}</h2>
+            <h2 className="banner-animation">{"Hi! I'm Felipe Spena"}</h2>
             <span className="wrap">
               <TypeAnimation
                 sequence={[
                   "Product Designer",
-                  2000,
+                  5000,
                   "Web Developer",
-                  2000,
+                  5000,
                   "Ux & UI Design",
-                  2000,
+                  5000,
                 ]}
                 //  Replacing previous Text
-                style={{ fontSize: "2em" }}
+                style={{ fontSize: "3em" }}
                 wrapper="h2"
+                className="banner-animation"
                 repeat={Infinity}
               />
             </span>

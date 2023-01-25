@@ -42,7 +42,7 @@ export const Contact = () => {
 
   return (
     <Container>
-      <Row className="align-items-center contact-container">
+      <Row className="align-items-center contact-container" >
         
         <Col  xd={12} md={6} xl={6}>
           <section className="contact-left-col" data-aos="flip-left" data-aos-duration="2000">
@@ -52,7 +52,7 @@ export const Contact = () => {
             </h5>
           </div>
           <form ref={form} className="form" onSubmit={sendEmail}>
-            <div className="name-div">
+            <div className="name-div" id="contact">
             <label > Name </label>
 
               <input

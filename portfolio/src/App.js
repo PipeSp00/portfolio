@@ -10,6 +10,8 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Opinions } from './components/Opinions';
 
+
+
 function App() {
 
 

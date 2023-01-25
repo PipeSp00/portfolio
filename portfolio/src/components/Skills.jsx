@@ -64,6 +64,15 @@ export const Skills = () => {
                   <img src={githubimage} alt="" />
                   <img src={figmaimage} alt="" />
                 </div>
+                <div className="item-txtx">
+                <h4> 
+                    {"aaaaa"}
+                </h4>
+                <span>
+                    {"qaaaasdasd"}
+                </span>
+                
+            </div>
               </div>
               </Col>
 
@@ -79,6 +88,15 @@ export const Skills = () => {
                   <img src={blenderimage} alt="" />
                   <img src={sketchupimage} alt="" />
                 </div>
+                <div className="item-txtx">
+                <h1 > 
+                    {"Creativiy"}
+                </h1>
+                <span>
+                    {"qaaaasdasd"}
+                </span>
+                
+            </div>
               </div>
               </Col>
               <Col xd={12} md={12} xl={4}>
@@ -91,6 +109,15 @@ export const Skills = () => {
                   <img src={analyticsimage} alt="" />
                   
                 </div>
+                <div className="item-txtx">
+                <h4> 
+                    {"aaaaa"}
+                </h4>
+                <span>
+                    {"qaaaasdasd"}
+                </span>
+                
+            </div>
               </div>
           </Col>
         </Row>
