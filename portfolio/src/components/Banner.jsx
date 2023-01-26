@@ -25,13 +25,13 @@ export const Banner = () => {
                 sequence={[
                   "Web Developer",
                   4000,
-                  "Product Designer",
+                  "Product Design",
                   4000,
                   "Ux & UI Design",
                   4000,
                 ]}
                 //  Replacing previous Text
-                style={{ fontSize: "3em" }}
+                style={{ fontSize: "2em" }}
                 wrapper="h2"
                 className="banner-animation"
                 repeat={Infinity}

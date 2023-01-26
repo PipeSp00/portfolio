@@ -21,7 +21,7 @@ body {
   position: relative;
   
   background: rgb(105,198,240);
-  background: linear-gradient(180deg, rgba(115, 115, 117, 0.253) 0%, rgb(104, 114, 255) 34%, rgb(201, 143, 255) 60%, rgb(191, 211, 255) 100%);
+  background: linear-gradient(180deg, rgba(115, 115, 117, 0.555) 0%, rgb(104, 114, 255) 34%, rgb(201, 143, 255) 60%, rgb(191, 211, 255) 100%);
   color: #fff !important;
   font-family:'Segoe UI'
 }
@@ -94,6 +94,7 @@ p.danger {
 .navbar-container {
   background-color: rgba(100, 112, 111, 0.616) !important;
 }
+
 nav.navbar {
   padding: 8px 0;
   position: fixed;
@@ -252,13 +253,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 font-size: 22px;
 }
 
-
-
-
-
-
 .banner-imagen {
-  animation: MoveUpDown 10s linear infinite;
+  
   position: relative;
   left: 0;
   bottom: 0;
@@ -318,24 +314,16 @@ flex-direction: column;
   display: flex !important;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.438);
-  height: 400px;
-  width: 800px;
 }
 
 .information-section {
   margin:0px 150px 50px 150px;
-  
+  padding: 20px;
   border-radius: 45px;
   scale: .9;
-
+  
  
 
-}
-.information-section img {
-
-  height: 400px;
-  width: 400px;
 }
 
 
@@ -343,19 +331,17 @@ flex-direction: column;
   
 
 span p {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 300;
-  text-align: center;
-  padding: 0 30px;
+  text-align: justify;
+  padding: 0;
   line-height: 1.4;
 
   
 }
 
-span p {
+.container-info {max-width: 100%;}
 
-color: #121212;
-}
 
 .skill-slide {
 
@@ -577,6 +563,7 @@ color: #121212;
   overflow: hidden;
   margin-bottom: 24px;
   scale: .8;
+  border: 2px solid #f3f4f5;
 }
 .proj-imgbx::before {
   content: "";
@@ -669,7 +656,7 @@ scale: .2 };
 form {
   display: flex;
   flex-direction: column;
-  background-color: rgb(175, 215, 224, .6);
+  background-color: rgba(24, 211, 253, 0.329);
   align-items: center;
   border-radius: 15px;
   padding-top: 20px;
@@ -713,6 +700,10 @@ form div label {
   position: relative;
   bottom:80px;
   
+  
+}
+.message-label::placeholder {
+  color: black;
 }
 input[type=submit] {
   border-radius: 15px;
@@ -725,7 +716,7 @@ input[type=submit] {
   
 }
 .contact-left-col{
-  background: linear-gradient(90deg, rgb(43, 158, 252) 0%, rgb(23, 23, 177) 34%, rgb(14, 155, 187) 100%);
+  background: linear-gradient(180deg, rgba(115, 115, 117, 0.555) 0%, rgb(104, 114, 255) 34%, rgb(201, 143, 255) 60%, rgb(191, 211, 255) 100%);
   border-radius: 15px;
   border: 2px solid white;
   scale: .85;
@@ -737,6 +728,10 @@ input[type=submit] {
   padding: 50px;
 }
 
+.form-header h5{
+font-weight: 300;
+z-index: 10;
+}
 
 .contact-img{
   animation: mirrorflip 40s 0s linear infinite;
@@ -797,6 +792,16 @@ margin: 5px;
     border-radius: 15px;
     
 
+}
+
+span p {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+  padding: 0;
+  line-height: 1.4;
+
+  
 }
 
 .name-label {

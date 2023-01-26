@@ -48,8 +48,9 @@ export const Contact = () => {
           <section className="contact-left-col" data-aos="flip-left" data-aos-duration="2000">
           <div className="form-header">
             <h5>
-              Have you a new idea? Or maybe an old project you want to update? Just write me what it is about and I'll be in touch as soon as possible!
-            </h5>
+            I’m interested in new opportunities, if you have other request or question, don’t hesitate to use the form.
+
+</h5>
           </div>
           <form ref={form} className="form" onSubmit={sendEmail}>
             <div className="name-div" id="contact">
@@ -82,16 +83,13 @@ export const Contact = () => {
             <label > Message </label>
 
 
-              <textarea 
+              <textarea
                 className="message-label"
                 type="text"
                 name="message"
                 id="message"
-                placeholder="Describe yourself here..."
-                onChange={(event) => setmessage(event.target.value)}
-                value={message}>
-
-              </textarea>
+                placeholder="YOUR TEXT" onChange={(event) => setmessage(event.target.value)}
+                value={message}></textarea>
               
               
             </div>
